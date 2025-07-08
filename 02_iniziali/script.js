@@ -2,12 +2,19 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
-
 // Dichiara la funzione qui.
-
+function getFirstLetter(array) {
+  let newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    const name = array[i];
+    const firstLetter = name[0];
+    newArray.push(firstLetter);
+  }
+  return newArray;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
-
-
+let firstLetterBox = getFirstLetter(names);
+console.log(firstLetterBox);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
