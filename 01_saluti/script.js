@@ -3,7 +3,7 @@
 const userName = "Mario";
 
 // Dichiara la funzione qui.
-function printName() {
+function printName(string) {
   console.log(`ciao ${userName}`);
 }
 
