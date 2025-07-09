@@ -3,12 +3,15 @@
 const word = "javascript";
 
 // Dichiara la funzione qui.
-function countVocals(array) {
-  let count = 0;
+function countVocals(string) {
+  //dichiaro un array di vocali
   const vocals = [`a`, `e`, `i`, `o`, `u`];
-  for (let i = 0; i < array.length; i++) {
-    if (vocals.includes(array[i])) {
-      count++;
+  //dichiaro una variabile che conta le vocali all'interno della parola
+  let count = 0;
+  //ciclo la parola come se fosse un array di caratteri
+  for (let i = 0; i < string.length; i++) {
+    if (vocals.includes(string[i])) {
+      count++; //count = count + 1
     }
   }
   return count;
