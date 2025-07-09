@@ -8,7 +8,7 @@ function filteredByFirstLetter(array, letter) {
   for (let i = 0; i < array.length; i++) {
     let parola = array[i];
     let parolaFirstLetter = parola[0];
-    if (parolaFirstLetter == letter) {
+    if (parolaFirstLetter.toLowerCase() == letter.toLowerCase()) {
       newArray.push(parola);
     }
   }
@@ -16,7 +16,7 @@ function filteredByFirstLetter(array, letter) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-let result = filteredByFirstLetter(names, `A`);
+let result = filteredByFirstLetter(names, `a`);
 console.log(result);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
