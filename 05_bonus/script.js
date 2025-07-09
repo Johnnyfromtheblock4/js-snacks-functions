@@ -9,12 +9,13 @@ const name = "Mario";
 
 // Dichiara la funzione qui.
 function greetings(name) {
+  //ho bisogno di una variabile contenente la data odierna 
   const now = new Date();
   const hour = now.getHours();
 
   if (hour < 13) {
     return `Buongiorno ${name}`;
-  } else if (hour < 17) {
+  } else if (hour < 18) {
     return `Buon pomeriggio ${name}`;
   } else {
     return `Buonasera ${name}`;
