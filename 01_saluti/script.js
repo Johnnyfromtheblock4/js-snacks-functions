@@ -3,11 +3,16 @@
 const userName = "Mario";
 
 // Dichiara la funzione qui.
-function printName(string) {
-  console.log(`ciao ${userName}`);
+function printName(name) {
+  console.log(`ciao ${name}`);
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-printName();
+printName(userName);
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+//FUNZIONE FRECCIA
+const userNome = "Simone";
+const sayMyName = (nome) => console.log(`ciao ${nome}`);
+sayMyName(userNome);
